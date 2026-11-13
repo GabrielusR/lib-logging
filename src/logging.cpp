@@ -3,6 +3,8 @@
 #include "utils.h"
 #include "logging.h"
 
+extern "C" const char * libVersion() { return "V.1.0"; };
+
 void Log::setLevel(LogLevel level) {
 	
 	m_logLevel = {level};
